@@ -28,9 +28,10 @@ O **EduCollab** é uma plataforma SaaS (Software as a Service) educacional multi
 - **Trilhas e Quizzes Gamificados:** Gráficos de evolução (XP) e feedback estruturado após cada avaliação.
 - **Revisão Inteligente:** Algoritmo que detecta notas baixas e oferece resumos proativos antes da próxima aula.
 
-Não és um profissional técnico da área? Não se preocupe! Elaborei um passo a passo simples pra começar, basta clicar neste manual:
+Não és um profissional técnico da área? Elaborei um passo a passo simples pra começar, basta clicar neste manual:
 
-<a href="comece_por_aqui_apresentacao_educollab.html"><kbd><b>📄 Abrir Manual Educollab</b></kbd></a>
+<a href="https://github.io" target="_blank"><kbd><b>📄 Abrir Manual Educollab</b></kbd></a>
+
 
 ---
 
