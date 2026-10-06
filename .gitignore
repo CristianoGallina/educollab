@@ -16,3 +16,5 @@ backend/.pytest_cache/
 # Ignorar ficheiros de log gerados pela auditoria
 logs/
 *.log
+.venv/
+backend/.venv/
