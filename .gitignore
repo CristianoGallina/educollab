@@ -1,0 +1,18 @@
+# Ignorar as credenciais e variáveis de ambiente (CRÍTICO)
+.env
+
+# Ignorar os ficheiros da base de dados local
+postgres_data/
+
+# Ignorar dependências do Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Ignorar dependências e cache do Backend Python
+backend/__pycache__/
+*.pyc
+backend/.pytest_cache/
+
+# Ignorar ficheiros de log gerados pela auditoria
+logs/
+*.log

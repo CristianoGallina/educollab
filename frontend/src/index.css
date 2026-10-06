@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+/* As cores das turmas vêm do banco (ex.: "bg-violet-600"), então o Tailwind não as encontra no código-fonte.
+   Registrá-las aqui garante que o CSS delas seja sempre gerado. */
+@source inline("bg-{blue,emerald,violet,rose,amber,indigo,teal,orange,pink,cyan,sky,lime}-{500,600,700}");

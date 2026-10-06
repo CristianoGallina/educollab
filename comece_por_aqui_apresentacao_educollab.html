@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCollab | Pitch & Guia de Teste</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #059669);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Hero Section -->
+    <header class="bg-slate-900 text-white py-20 px-6 relative overflow-hidden">
+        <div class="absolute top-[-50%] left-[-10%] w-96 h-96 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+        <div class="absolute top-[-50%] right-[-10%] w-96 h-96 bg-emerald-600 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6">
+                Edu<span class="text-blue-500">Collab</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed mb-10">
+                A primeira plataforma B2B que transforma a sobrecarga escolar em 
+                <span class="text-emerald-400 font-semibold">Inteligência Preditiva</span> e 
+                <span class="text-blue-400 font-semibold">Aprendizado Personalizado</span>.
+            </p>
+            <a href="#demo" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-8 rounded-full shadow-lg shadow-blue-500/30 transition-all hover:-translate-y-1 inline-flex items-center gap-2">
+                <i class="fa-solid fa-play"></i> Testar a Demonstração
+            </a>
+        </div>
+    </header>
+
+    <!-- O Problema & A Solução -->
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Por que o EduCollab existe?</h2>
+            <p class="text-slate-600 max-w-2xl mx-auto">A educação atual sofre com o burnout dos professores, a falta de engajamento dos alunos e o apagão de dados para a gestão. Nós unimos IA Generativa e Análise de Dados para resolver os três lados do balcão.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pila 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow border-t-4 border-t-blue-500">
+                <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6 text-blue-600 text-2xl">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Para Professores</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Chega de domingos perdidos planejando aulas. O Copiloto IA gera planos alinhados à BNCC, cria quizzes e corrige provas automaticamente.</p>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Raio-X de Aprendizagem</li>
+                    <li><i class="fa-solid fa-check text-blue-500 mr-2"></i> Geração de Avaliações</li>
+                </ul>
+            </div>
+
+            <!-- Pila 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow border-t-4 border-t-emerald-500">
+                <div class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center mb-6 text-emerald-600 text-2xl">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Para Alunos</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Cada aluno aprende no seu ritmo com o Tutor Socrático 24/7, que guia o raciocínio em vez de dar a resposta pronta.</p>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Trilha Gamificada</li>
+                    <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Chatbot Socrático Pessoal</li>
+                </ul>
+            </div>
+
+            <!-- Pila 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-xl transition-shadow border-t-4 border-t-slate-800">
+                <div class="w-14 h-14 bg-slate-100 rounded-xl flex items-center justify-center mb-6 text-slate-800 text-2xl">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Para Diretores</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">Painel macro que projeta custos de IA, alerta para risco de evasão tecnológica e prevê a nota da escola no próximo semestre.</p>
+                <ul class="text-sm text-slate-500 space-y-2">
+                    <li><i class="fa-solid fa-check text-slate-700 mr-2"></i> Radar de Risco</li>
+                    <li><i class="fa-solid fa-check text-slate-700 mr-2"></i> Previsão Orçamentária</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guia de Teste -->
+    <section id="demo" class="py-20 px-6 bg-slate-100 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Como Testar a Plataforma</h2>
+                <p class="text-slate-600">Não precisa ser técnico. Siga os 4 passos abaixo para ligar o servidor local e ver a mágica acontecer no seu computador.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg border border-slate-200">
+                
+                <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                    
+                    <!-- Passo 1 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">1</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-1">Baixe o Motor (Docker)</h4>
+                            <p class="text-sm text-slate-600">Instale o <a href="https://www.docker.com/products/docker-desktop/" class="text-blue-600 underline font-semibold" target="_blank">Docker Desktop</a>. Ele é a máquina virtual que vai rodar o sistema. Deixe-o aberto.</p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 2 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">2</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-1">Conecte o Cérebro da IA</h4>
+                            <p class="text-sm text-slate-600 mb-2">
+                                Acesse o <a href="https://console.groq.com/keys" class="text-blue-600 underline font-semibold" target="_blank">Groq Console</a> (faça um login rápido com o Google) e clique no botão <b>Create API Key</b>. Copie o código longo que vai aparecer.
+                            </p>
+                            <p class="text-sm text-slate-600">
+                                Depois, abra a pasta do projeto EduCollab e mude o nome do arquivo <code>.env.example</code> para <code>.env</code>. Abra ele com o Bloco de Notas e cole a sua chave logo após o sinal de igual em <code>GROQ_API_KEY=</code>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Passo 3 -->
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full border-4 border-white bg-blue-500 text-white font-bold shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">3</div>
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-4 rounded-xl border border-slate-200 bg-slate-50 shadow-sm">
+                            <h4 class="font-bold text-slate-800 mb-1">Ligue o Servidor</h4>
+                            <p class="text-sm text-slate-600 mb-2">No Windows, clique no botão <b>Iniciar</b>, digite <code>cmd</code> e aperte Enter. Uma tela preta vai abrir.</p>
+                            <p class="text-sm text-slate-600 mb-2">Nessa tela, digite <code>cd </code> (com espaço), <b>arraste a pasta</b> do EduCollab para dentro da tela preta e aperte Enter para entrar nela.</p>
+                            <p class="text-sm text-slate-600">Por fim, copie e cole o comando mágico abaixo e dê Enter para ligar a escola:<br><code class="bg-slate-800 text-emerald-400 px-3 py-1.5 rounded mt-2 block w-fit font-mono font-bold tracking-wide">docker-compose up -d</code></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Credenciais -->
+                <div class="mt-16 bg-slate-900 rounded-2xl p-8 text-white text-center">
+                    <h3 class="text-2xl font-bold mb-2">Tudo pronto! Acesso Liberado.</h3>
+                    <p class="text-slate-400 mb-8">Acesse <a href="http://localhost:5173" class="text-blue-400 font-bold hover:underline" target="_blank">http://localhost:5173</a> no seu navegador.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                            <div class="text-emerald-400 mb-2"><i class="fa-solid fa-chalkboard-user text-2xl"></i></div>
+                            <h4 class="font-bold">Perfil Professor</h4>
+                            <p class="text-xs text-slate-300 mt-2 mb-1">Login:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block mb-2">professor@educollab.demo</code>
+                            <p class="text-xs text-slate-300 mb-1">Senha:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block">prof123</code>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                            <div class="text-blue-400 mb-2"><i class="fa-solid fa-user-graduate text-2xl"></i></div>
+                            <h4 class="font-bold">Perfil Aluno</h4>
+                            <p class="text-xs text-slate-300 mt-2 mb-1">Login:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block mb-2">aluno@educollab.demo</code>
+                            <p class="text-xs text-slate-300 mb-1">Senha:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block">aluno123</code>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-xl border border-white/20">
+                            <div class="text-amber-400 mb-2"><i class="fa-solid fa-building text-2xl"></i></div>
+                            <h4 class="font-bold">Perfil Gestor</h4>
+                            <p class="text-xs text-slate-300 mt-2 mb-1">Login:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block mb-2">admin@educollab.demo</code>
+                            <p class="text-xs text-slate-300 mb-1">Senha:</p>
+                            <code class="text-sm text-white bg-black/30 px-2 py-1 rounded block">admin123</code>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dicas de Ouro -->
+                <div class="mt-16 border-t border-slate-200 pt-12">
+                    <h3 class="text-3xl font-bold text-slate-800 text-center mb-10">O que testar primeiro? (Dicas de Ouro)</h3>
+                    
+                    <div class="space-y-6">
+                        <!-- Dica Professor -->
+                        <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-6">
+                            <h4 class="text-xl font-bold text-emerald-800 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-chalkboard-user"></i> 1. Como Professor
+                            </h4>
+                            <p class="text-slate-700 text-sm mb-4">Sinta o verdadeiro poder do Copiloto Pedagógico:</p>
+                            <ol class="list-decimal list-inside text-sm text-slate-600 space-y-2">
+                                <li>No menu esquerdo, clique em <b>Ferramentas de IA</b> e vá na aba <b>Quizzes</b>.</li>
+                                <li>Escolha a turma, coloque "Nível Difícil" e digite o tema: <i>"Revolução Francesa"</i>.</li>
+                                <li>Clique em Gerar. Veja a IA criar questões de múltipla escolha perfeitas, já com o gabarito justificado!</li>
+                                <li>Vá na tela inicial (Dashboard) e veja o painel de <b>Inteligência Preditiva</b>, que avisa exatamente quais alunos estão com risco de reprovar baseando-se no histórico deles.</li>
+                                <li>Abra o <b>Assistente do Professor</b> (chat flutuante verde) e peça 3 ideias criativas para a aula de amanhã.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Dica Aluno -->
+                        <div class="bg-blue-50 border border-blue-200 rounded-2xl p-6">
+                            <h4 class="text-xl font-bold text-blue-800 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-user-graduate"></i> 2. Como Aluno
+                            </h4>
+                            <p class="text-slate-700 text-sm mb-4">Veja como a gamificação e a IA guiam o aprendizado:</p>
+                            <ol class="list-decimal list-inside text-sm text-slate-600 space-y-2">
+                                <li>Na tela inicial, repare no gráfico de evolução e na pontuação de <b>XP Gamificada</b>.</li>
+                                <li>Abra o botão azul <b>"Falar com Tutor IA"</b> no canto inferior direito.</li>
+                                <li>Em vez de pedir a resposta, diga algo como: <i>"Não entendi a diferença entre Mitose e Meiose, me explica com uma analogia de futebol?"</i></li>
+                                <li>Note como a IA é configurada para usar a <b>Maiêutica Socrática</b>, forçando o aluno a pensar em vez de dar a resposta mastigada.</li>
+                            </ol>
+                        </div>
+
+                        <!-- Dica Admin -->
+                        <div class="bg-amber-50 border border-amber-200 rounded-2xl p-6">
+                            <h4 class="text-xl font-bold text-amber-800 mb-3 flex items-center gap-2">
+                                <i class="fa-solid fa-building"></i> 3. Como Gestor (Admin)
+                            </h4>
+                            <p class="text-slate-700 text-sm mb-4">Controle absoluto sobre o investimento e a adoção da tecnologia:</p>
+                            <ol class="list-decimal list-inside text-sm text-slate-600 space-y-2">
+                                <li>Acesse o Dashboard e veja a área <b>Inteligência Executiva da Rede</b>. Repare na previsão orçamentária do mês.</li>
+                                <li>A IA aponta exatamente qual escola está subutilizando a ferramenta (Risco de Evasão/Churn).</li>
+                                <li>Abra a tela <b>Gestão de Usuários & IA</b> e veja a tabela em tempo real com os centavos exatos gastos em cada geração de conteúdo pelos professores.</li>
+                                <li>Clique no chat <b>Analista da Rede</b> e pergunte como justificar o investimento no EduCollab para o Conselho da Escola.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center border-t border-slate-800">
+        <p>&copy; 2026 EduCollab. Feito para revolucionar a sala de aula.</p>
+    </footer>
+
+</body>
+</html>
