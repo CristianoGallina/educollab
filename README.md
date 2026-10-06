@@ -30,7 +30,8 @@ O **EduCollab** é uma plataforma SaaS (Software as a Service) educacional multi
 
 Não és um profissional técnico da área? Elaborei um passo a passo simples pra começar, basta clicar neste manual:
 
-<a href="https://github.io" target="_blank"><kbd><b>📄 Abrir Manual Educollab</b></kbd></a>
+<a href="https://CristianoGallina.github.io/educollab/comece_por_aqui_apresentacao_educollab.html" target="_blank"><kbd><b>📄 Abrir Manual Educollab</b></kbd></a>
+
 
 
 ---
