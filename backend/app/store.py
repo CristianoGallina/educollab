@@ -960,7 +960,7 @@ def delete_school(escola_id: int) -> dict:
             session.delete(prof)
             
         # 3. API Usage
-        session.query(ApiUsage).filter(ApiUsage.escola_id == escola_id).delete()
+        session.query(ApiUsage).filter(ApiUsage.school_id == escola_id).delete()
         
         # 4. School
         session.delete(school)
