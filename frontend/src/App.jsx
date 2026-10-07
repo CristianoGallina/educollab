@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { BookOpen, Home, Users, BrainCircuit, UserCircle, ShieldCheck, LogOut } from 'lucide-react';
-import Dashboard from './components/Dashboard';
-import MinhasTurmas from './components/MinhasTurmas';
-import FerramentasIA from './components/FerramentasIA';
-import FazerExercicio from './components/FazerExercicio';
-import GestaoUsuarios from './components/GestaoUsuarios';
-import Login from './components/Login';
-import TutorChat from './components/TutorChat';
-import CopilotoChat from './components/CopilotoChat';
-import AdminCopilotoChat from './components/AdminCopilotoChat';
+import Dashboard from './pages/Dashboard';
+import MinhasTurmas from './pages/MinhasTurmas';
+import FerramentasIA from './pages/FerramentasIA';
+import FazerExercicio from './pages/FazerExercicio';
+import GestaoUsuarios from './pages/GestaoUsuarios';
+import Login from './pages/Login';
+import TutorChat from './components/chat/TutorChat';
+import CopilotoChat from './components/chat/CopilotoChat';
+import AdminCopilotoChat from './components/chat/AdminCopilotoChat';
 
 export default function App() {
   const [token, setToken] = useState(localStorage.getItem('token') || null);

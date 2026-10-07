@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Network, X, Send, BarChart2 } from 'lucide-react';
-import { API_BASE, apiFetch } from '../api';
+import { API_BASE, apiFetch } from '../../api';
 
 export default function AdminCopilotoChat() {
   const [isChatOpen, setIsChatOpen] = useState(false);

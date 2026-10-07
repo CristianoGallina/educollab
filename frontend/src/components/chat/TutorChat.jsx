@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Sparkles, X, Send, MessageSquare } from 'lucide-react';
-import { API_BASE, apiFetch } from '../api';
+import { API_BASE, apiFetch } from '../../api';
 
 export default function TutorChat() {
   const [isChatOpen, setIsChatOpen] = useState(false);
