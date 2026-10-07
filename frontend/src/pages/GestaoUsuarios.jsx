@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, School, Key, FileText, CheckCircle2, AlertCircle, Trash2, PlusCircle, Settings, UserMinus } from 'lucide-react';
-import { API_BASE, apiFetch } from '../../api';
+import { API_BASE, apiFetch } from '../api';
 
 const opcoesModeloPorProvedor = {
   'grok': ['grok-2-latest', 'grok-3-mini'],
