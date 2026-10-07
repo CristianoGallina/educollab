@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, Body, HTTPException, Query, status
-from ..dependencies import verificar_papel_professor
+from ..dependencies import verificar_papel_professor, usuario_logado
 from ..schemas import AlunoCreate, DisciplinaCreate, PlanoAulaCreate, QuizCreate, TurmaCreate, RegenerarQuestaoRequest
 from ..services import gerar_plano_ia, gerar_quiz_ia, regenerar_questao_ia, analisar_raio_x_turma_ia
 from ..store import (
@@ -303,9 +303,10 @@ class CopilotoChatRequest(BaseModel):
 @router.post("/chat-copiloto")
 async def chat_copiloto_endpoint(
     req: CopilotoChatRequest,
-    usuario: dict = Depends(verificar_papel_professor)
+    papel: str = Depends(verificar_papel_professor),
+    user_info = Depends(usuario_logado)
 ):
     from ..services import chat_copiloto_professor
-    escola_id = usuario.get("escola_id", 1)
+    escola_id = getattr(user_info, 'escola_id', 1)
     resposta = await chat_copiloto_professor(escola_id, req.mensagem, req.historico)
     return {"resposta": resposta}

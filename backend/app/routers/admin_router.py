@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, Body, HTTPException, status
 
-from ..dependencies import verificar_papel_admin
+from ..dependencies import verificar_papel_admin, usuario_logado
 from ..schemas import SchoolCreate, ProfessorCreate, SchoolConfigIA
 from ..store import create_school, create_teacher, get_summary, configurar_ia_escola, remover_configuracao_ia_escola, get_school_uso_ia
 
