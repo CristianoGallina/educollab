@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import os
+
+new_code = """import React, { useState, useEffect } from 'react';
 import { Users, School, Key, FileText, CheckCircle2, AlertCircle, Trash2, PlusCircle, Settings, UserMinus } from 'lucide-react';
 import { API_BASE, apiFetch } from '../../api';
 
@@ -527,3 +529,8 @@ export default function GestaoUsuarios({ papel = 'administrador' }) {
     </div>
   );
 }
+"""
+
+with open('frontend/src/pages/GestaoUsuarios.jsx', 'w', encoding='utf-8') as f:
+    f.write(new_code)
+print("Updated GestaoUsuarios.jsx")
