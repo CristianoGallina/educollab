@@ -584,7 +584,7 @@ Responda de forma clara, prática e no formato de texto limpo (Markdown). Seja s
 
 Nova mensagem do professor: {mensagem}
 
-Formato OBRIGATÓRIO de saída: JSON {"resposta": "sua resposta em markdown aqui"}"""
+Formato OBRIGATÓRIO de saída: JSON {{"resposta": "sua resposta em markdown aqui"}}"""
 
     resultado_str = await _chamada_llm_json(system_prompt, human_prompt, temperatura=0.7, escola_id=escola_id)
     try:
