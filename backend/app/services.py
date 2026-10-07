@@ -582,7 +582,14 @@ Responda de forma clara, prática e no formato de texto limpo (Markdown). Seja s
     human_prompt = f"""Histórico da conversa:
 {historico_texto}
 
-Nova mensagem do professor: {mensagem}"""
+Nova mensagem do professor: {mensagem}
 
-    resultado_str = await _chamada_llm(system_prompt, human_prompt, temperatura=0.7, escola_id=escola_id)
-    return resultado_str
+Formato OBRIGATÓRIO de saída: JSON {"resposta": "sua resposta em markdown aqui"}"""
+
+    resultado_str = await _chamada_llm_json(system_prompt, human_prompt, temperatura=0.7, escola_id=escola_id)
+    try:
+        import json
+        dados = json.loads(resultado_str)
+        return dados.get("resposta", resultado_str)
+    except:
+        return resultado_str

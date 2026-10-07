@@ -70,9 +70,10 @@ class AdminChatRequest(BaseModel):
 @router.post("/chat-copiloto")
 async def chat_copiloto_admin(
     req: AdminChatRequest,
-    usuario: dict = Depends(verificar_papel_admin)
+    papel: str = Depends(verificar_papel_admin),
+    user_info = Depends(usuario_logado)
 ):
-    from ..services import _chamada_llm
+    from ..services import _chamada_llm_json
     system_prompt = """Você é o Analista Executivo EduCollab.
 Você ajuda diretores e gestores escolares a entender métricas de uso de IA, custos, risco de churn de escolas e desempenho acadêmico macro.
 Responda sempre com uma postura executiva, clara e em Markdown."""
@@ -80,6 +81,15 @@ Responda sempre com uma postura executiva, clara e em Markdown."""
     human_prompt = f"""Histórico:
 {historico_texto}
 
-Dúvida do Gestor: {req.mensagem}"""
-    resposta = await _chamada_llm(system_prompt, human_prompt, temperatura=0.6, escola_id=1)
-    return {"resposta": resposta}
+Dúvida do Gestor: {req.mensagem}
+
+Formato OBRIGATÓRIO de saída: JSON {{ "resposta": "sua resposta em markdown aqui" }}"""
+    
+    escola_id = getattr(user_info, 'escola_id', 1)
+    resposta = await _chamada_llm_json(system_prompt, human_prompt, temperatura=0.6, escola_id=escola_id)
+    try:
+        import json
+        dados = json.loads(resposta)
+        return {"resposta": dados.get("resposta", resposta)}
+    except:
+        return {"resposta": resposta}
