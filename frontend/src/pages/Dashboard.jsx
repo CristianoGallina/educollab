@@ -1,5 +1,6 @@
 import { API_BASE, apiFetch } from '../api';
 import React, { useEffect, useState } from 'react';
+import TrilhaReforco from '../components/chat/TrilhaReforco';
 import {
   BookCheck,
   Target,
@@ -637,7 +638,7 @@ export default function Dashboard({ papel, onIniciarTrilha, onNavegar }) {
         </div>
 
         <div
-          onClick={() => navegarPara('exercicios')}
+          onClick={() => setTrilhaAberta(true)}
           className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:border-blue-400 cursor-pointer transition-all space-y-3"
         >
           <div className="p-3 bg-emerald-50 text-emerald-600 w-fit rounded-xl font-bold">
@@ -652,6 +653,7 @@ export default function Dashboard({ papel, onIniciarTrilha, onNavegar }) {
           </span>
         </div>
       </div>
+      <TrilhaReforco isOpen={trilhaAberta} onClose={() => setTrilhaAberta(false)} />
     </div>
   );
 }
