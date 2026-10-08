@@ -23,7 +23,7 @@ import {
 
 
 
-export default function Dashboard({ papel, onIniciarTrilha, onNavegar }) {
+export default function Dashboard({ papel, onIniciarTrilha, onNavegar }) {\n  const [trilhaAberta, setTrilhaAberta] = useState(false);
   const [statsAdmin, setStatsAdmin] = useState(null);
   const [statsProf, setStatsProf] = useState(null);
   const [escolasLista, setEscolasLista] = useState([]);
